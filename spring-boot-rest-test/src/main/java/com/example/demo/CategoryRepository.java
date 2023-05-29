@@ -1,0 +1,16 @@
+package com.example.demo;
+
+import java.util.List;
+
+import org.springframework.data.repository.Repository;
+
+import com.example.beans.Category;
+
+public interface CategoryRepository extends Repository<Category, Long> {
+	
+	void delete (Category category);
+	
+	Category save(Category persisted);
+	
+	List<Category> findAll();
+}

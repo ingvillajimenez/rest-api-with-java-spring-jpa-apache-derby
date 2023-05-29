@@ -1,0 +1,8 @@
+package com.example.beans;
+
+import javax.persistence.Column;
+
+@Entity
+public class Category {
+
+}

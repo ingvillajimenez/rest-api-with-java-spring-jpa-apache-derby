@@ -1,0 +1,12 @@
+package com.example.demo;
+
+import org.springframework.data.repository.Repository;
+
+import com.example.beans.Category;
+
+interface CategoryRepository extends Repository<Category, Long> {
+	
+	void delete (Category category);
+	
+	Category save(Category persisted);
+}
